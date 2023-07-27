@@ -18,10 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         let vc = ViewController()
         let navVC = UINavigationController(rootViewController: vc)
-        
+        navVC.navigationBar.backgroundColor = .yellow
         window.rootViewController = navVC
         self.window = window
         window.makeKeyAndVisible()
+    
         
         
     }
